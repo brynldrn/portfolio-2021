@@ -1,0 +1,23 @@
+// NPM modules
+@import '~sass-mq';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
+// base
+@import "./base/normalize";
+@import "./base/variables";
+
+// abstracts
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+
+// globals
+@import "./base/globals";
+
+// components
+@import "../../components/Header/header";
+@import "../../components/Loader/loader";
+@import "../../components/Card/card";
+@import "../../components/Sidebar/sidebar";
+@import "../../components/ProjectInfo/project-info";

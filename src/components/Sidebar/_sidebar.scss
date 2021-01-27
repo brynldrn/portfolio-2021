@@ -1,0 +1,39 @@
+$module: ".sidebar";
+
+#{$module} {
+  background-color: rgba(gray, 0.2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: rem(20) 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    li {
+      display: block;
+      margin-right: rem(10);
+      width: rem(32);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  li img {
+    display: block;
+    filter: grayscale(100%);
+    max-width: rem(32);
+    transition: all 300ms ease;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

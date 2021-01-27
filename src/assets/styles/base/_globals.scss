@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 rem(10);
+  margin: 0 rem(20);
+
+  @include mq(tablet) {
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 rem(80);
+  }
+
+  @include mq(desktop) {
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: rem(1024);
+  }
+
+  &.--flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+html,
+body {
+  font-family: $montserrat;
+}
